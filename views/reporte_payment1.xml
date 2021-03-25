@@ -6,7 +6,7 @@
                 <div class="page">
 
                     <div style="font-size: 95%; position: absolute; top: 1.8cm; left: 3.8cm">
-                        GUATEMALA, <span t-field="o.payment_date"/> hola
+                        GUATEMALA, <span t-field="o.payment_date"/>
                     </div>
                     <div style="font-size: 95%; position: absolute; top: 2cm; left: 18.5cm">
                         <span t-esc="'{0:,.2f}'.format(o.amount)"/>
