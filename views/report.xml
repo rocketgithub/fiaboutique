@@ -3,12 +3,12 @@
     <data>
 
         <report
-            id="vidareal_account_payment1"
+            id="fiaboutique_account_payment1"
             string="Cheque BAM"
             model="account.payment"
             report_type="qweb-pdf"
-            file="vidareal.reporte_account_payment1"
-            name="vidareal.reporte_account_payment1"
+            file="fiaboutique.reporte_account_payment1"
+            name="fiaboutique.reporte_account_payment1"
         />
 
     </data>

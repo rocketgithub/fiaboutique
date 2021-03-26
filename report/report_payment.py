@@ -4,7 +4,7 @@ from odoo import api, models
 import odoo.addons.l10n_gt_extra.a_letras as a_letras
 
 class ReportAbstractPayment(models.AbstractModel):
-    _name = 'vidareal.abstract.reporte_account_payment'
+    _name = 'fiaboutique.abstract.reporte_account_payment'
 
     def totales(self, o):
         t = {'debito': 0, 'credito': 0}
@@ -27,13 +27,5 @@ class ReportAbstractPayment(models.AbstractModel):
         }
 
 class ReportPayment1(models.AbstractModel):
-    _name = 'report.vidareal.reporte_account_payment1'
-    _inherit = 'vidareal.abstract.reporte_account_payment'
-
-class ReportPayment2(models.AbstractModel):
-    _name = 'report.vidareal.reporte_account_payment2'
-    _inherit = 'vidareal.abstract.reporte_account_payment'
-
-class ReportPayment3(models.AbstractModel):
-    _name = 'report.vidareal.reporte_account_payment3'
-    _inherit = 'vidareal.abstract.reporte_account_payment'
+    _name = 'report.fiaboutique.reporte_account_payment1'
+    _inherit = 'fiaboutique.abstract.reporte_account_payment'
