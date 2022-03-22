@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <template id="reporte_account_payment1">
+    <template id="reporte_account_payment2">
         <t t-call="web.html_container">
             <t t-foreach="docs" t-as="o">
                 <div class="page">

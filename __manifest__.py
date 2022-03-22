@@ -12,7 +12,8 @@
     'data': [
         'views/report.xml',
      	'views/reporte_payment1.xml',
-
+     	'views/reporte_payment2.xml',
+     	'views/reporte_payment3.xml',
     ],
     'installable': True,
     'auto_install': False,

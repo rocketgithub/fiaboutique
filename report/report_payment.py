@@ -29,3 +29,11 @@ class ReportAbstractPayment(models.AbstractModel):
 class ReportPayment1(models.AbstractModel):
     _name = 'report.fiaboutique.reporte_account_payment1'
     _inherit = 'fiaboutique.abstract.reporte_account_payment'
+    
+class ReportPayment2(models.AbstractModel):
+    _name = 'report.fiaboutique.reporte_account_payment2'
+    _inherit = 'fiaboutique.abstract.reporte_account_payment'
+    
+class ReportPayment3(models.AbstractModel):
+    _name = 'report.fiaboutique.reporte_account_payment3'
+    _inherit = 'fiaboutique.abstract.reporte_account_payment'
