@@ -13,7 +13,7 @@
         
         <report
             id="fiaboutique_account_payment2"
-            string="Cheque 2"
+            string="Cheque BAC"
             model="account.payment"
             report_type="qweb-pdf"
             file="fiaboutique.reporte_account_payment2"
@@ -22,7 +22,7 @@
         
         <report
             id="fiaboutique_account_payment3"
-            string="Cheque 3"
+            string="Cheque BI"
             model="account.payment"
             report_type="qweb-pdf"
             file="fiaboutique.reporte_account_payment3"
