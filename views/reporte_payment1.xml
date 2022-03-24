@@ -20,7 +20,9 @@
                     <div style="font-size: 95%; position: absolute; top: 13cm; left: 2cm; width: 15cm">
                         <span t-field="o.communication"/>
                     </div>
-
+                      <div t-if="o.no_negociable == True" style="font-size: 100%; position: absolute; top: 5.6cm; left: 3cm">
+                      <span>NO  NEGOCIABLE</span>
+                  </div>
                     <div style="font-size: 95%; position: absolute; top: 14.5cm; left: 2cm; width: 15cm">
                         <span t-esc="o.partner_id.name"/>
                     </div>
@@ -90,4 +92,5 @@
                 </div>
             </t>
         </t>
-    </t>
+    </template>
+</odoo>
