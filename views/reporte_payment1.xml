@@ -12,22 +12,27 @@
                         <span t-esc="'{0:,.2f}'.format(o.amount)"/>
                     </div>
                     <div style="font-size: 95%; position: absolute; top: 2.3cm; left: 4.0cm; width: 18.5cm">
-                        <span t-esc="o.partner_id.name"/>
+                        <span t-esc="o.nombre_impreso or o.partner_id.name"/>
                     </div>
                     <div style="font-size: 95%; text-transform: uppercase; position: absolute; top: 3.3cm; left: 3.8cm; width: 20cm">
                         <span t-esc="a_letras.num_a_letras(o.amount)"/>
                     </div>
-                    <div style="font-size: 95%; position: absolute; top: 13cm; left: 2cm; width: 15cm">
-                        <span t-field="o.communication"/>
-                    </div>
+                    
                       <div t-if="o.no_negociable == True" style="font-size: 100%; position: absolute; top: 5.6cm; left: 3cm">
                       <span>NO  NEGOCIABLE</span>
                   </div>
-                    <div style="font-size: 95%; position: absolute; top: 14.5cm; left: 2cm; width: 15cm">
-                        <span t-esc="o.partner_id.name"/>
+                    
+                    <div style="font-size: 95%; position: absolute; top: 13.5cm; left: 1cm; width: 15cm">
+                        DESCRIPCION:<span t-field="o.descripcion"/>
                     </div>
-                    <div style="position: absolute; top: 15cm; left: 2cm; width: 15cm">
-                        <span t-field="o.move_name"/>
+                    <div style="font-size: 95%; position: absolute; top: 14cm; left: 1cm; width: 15cm">
+                        CIRCULAR:<span t-field="o.communication"/>
+                    </div>
+                    <div style="font-size: 95%; position: absolute; top: 14.5cm; left: 1cm; width: 15cm">
+                        COMPAÑIA:<span t-esc="o.nombre_impreso or o.partner_id.name"/>
+                    </div>
+                    <div style="position: absolute; top: 15cm; left: 1cm; width: 15cm">
+                        NO. DE CHEQUE:<span t-field="o.move_name"/>
                     </div>
 
                     <div style="position: absolute; top: 11cm; left: 0.8cm">
