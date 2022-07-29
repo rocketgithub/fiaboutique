@@ -15,7 +15,7 @@
                         <span t-esc="o.nombre_impreso or o.partner_id.name"/>
                     </div>
                     <div style="font-size: 95%; text-transform: uppercase; position: absolute; top: 3.3cm; left: 3.8cm; width: 20cm">
-                        <span t-esc="a_letras.num_a_letras(o.amount)"/>
+                        <span t-esc="a_letras(o.amount)"/>
                     </div>
                     
                       <div t-if="o.no_negociable == True" style="font-size: 100%; position: absolute; top: 5.6cm; left: 3cm">

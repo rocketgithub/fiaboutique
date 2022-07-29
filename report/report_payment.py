@@ -13,16 +13,19 @@ class ReportAbstractPayment(models.AbstractModel):
             t['credito'] += l.credit
         return t
 
+    def a_letras(self,monto):
+        return a_letras.num_a_letras(monto)
+    
     def _get_report_values(self, docids, data=None):
-        self.model = 'account.payment'
-        docs = self.env[self.model].browse(docids)
-
+        model = 'account.payment'
+        docs = self.env['account.payment'].browse(docids)
+        
         return {
             'doc_ids': docids,
-            'doc_model': self.model,
+            'doc_model': model,
             'docs': docs,
             'data': data,
-            'a_letras': a_letras,
+            'a_letras': self.a_letras,
             'totales': self.totales,
         }
 
