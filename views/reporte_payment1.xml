@@ -6,7 +6,7 @@
                 <div class="page">
 
                     <div style="font-size: 95%; position: absolute; top: 1.3cm; left: 3.8cm">
-                        GUATEMALA, <span t-field="o.payment_date"/>
+                        GUATEMALA, <span t-field="o.date"/>
                     </div>
                     <div style="font-size: 95%; position: absolute; top: 1.3cm; left: 17.9cm">
                         <span t-esc="'{0:,.2f}'.format(o.amount)"/>
@@ -26,19 +26,19 @@
                         DESCRIPCION:<span t-field="o.descripcion"/>
                     </div>
                     <div style="font-size: 95%; position: absolute; top: 14cm; left: 1cm; width: 15cm">
-                        CIRCULAR:<span t-field="o.communication"/>
+                        CIRCULAR:<span t-field="o.ref"/>
                     </div>
                     <div style="font-size: 95%; position: absolute; top: 14.5cm; left: 1cm; width: 15cm">
                         COMPAÑIA:<span t-esc="o.nombre_impreso or o.partner_id.name"/>
                     </div>
                     <div style="position: absolute; top: 15cm; left: 1cm; width: 15cm">
-                        NO. DE CHEQUE:<span t-field="o.move_name"/>
+                        NO. DE CHEQUE:<span t-field="o.move_id.name"/>
                     </div>
 
                     <div style="position: absolute; top: 11cm; left: 0.8cm">
                         <table>
                             <tbody>
-                                <tr t-foreach="o.move_line_ids" t-as="l">
+                                <tr t-foreach="o.move_id.line_ids" t-as="l">
 
                                     <td style="width: 11.5cm">
                                         <span t-field="l.account_id.name"/>
