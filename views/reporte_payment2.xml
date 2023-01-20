@@ -31,7 +31,7 @@
                             COMPAÑIA:<span t-esc="o.nombre_impreso or o.partner_id.name"/>
                         </div>
                         <div style="position: absolute; top: 15cm; left: 1cm; width: 15cm">
-                            NO. DE CHEQUE:<span t-field="o.move_id.name"/>
+                            NO. DE CHEQUE:<span t-field="o.check_number"/>
                         </div>
                         
                         <div style="position: absolute; top: 11cm; left: 0.8cm">
