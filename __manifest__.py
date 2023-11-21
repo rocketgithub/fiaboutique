@@ -10,7 +10,9 @@
     'author': 'aquíH',
     'depends': ['account','l10n_gt_extra'],
     'data': [
+        'views/paperformat.xml',
         'views/report.xml',
+        'views/reporte_gift_card.xml',
      	'views/reporte_payment1.xml',
      	'views/reporte_payment2.xml',
      	'views/reporte_payment3.xml',

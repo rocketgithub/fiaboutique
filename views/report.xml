@@ -29,5 +29,15 @@
             name="fiaboutique.reporte_account_payment3"
         />
 
+        <report
+            id="fiaboutique_gift_card"
+            string="Etiquetas"
+            model="gift.card" 
+            report_type="qweb-pdf"
+            paperformat="paperformat_gift_card"
+            file="fiaboutique.reporte_gift_card"
+            name="fiaboutique.reporte_gift_card"
+        />
+
     </data>
 </odoo>
