@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo> 
+    
+    <record id="paperformat_gift_card" model="report.paperformat">
+        <field name="name">Formato para gift cards</field>
+        <field name="default" eval="True"/>
+        <field name="format">custom</field>
+        <field name="page_height">13</field>
+        <field name="page_width">38</field>
+        <field name="orientation">Portrait</field>
+        <field name="margin_top">0</field>
+        <field name="margin_bottom">0</field>
+        <field name="margin_left">0</field>
+        <field name="margin_right">0</field>
+        <field name="header_line" eval="False"/>
+        <field name="header_spacing">0</field>
+        <field name="dpi">120</field>
+    </record>
+
+</odoo>
